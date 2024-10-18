@@ -84,4 +84,4 @@ To set up the database, we need to follow the steps below:
        bash milvus_runner.sh delete
       ```
          
-   To see how to activate and use this database, you can check the wrapper written in the file applications/milvues_data_base_provider.py.
+   To see how to activate and use this database, you can check the wrapper written in the file `applications/milvues_data_base_provider.py`.
