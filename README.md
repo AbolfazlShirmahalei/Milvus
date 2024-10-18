@@ -1,4 +1,6 @@
 # Milvus
+## Overview
+In this project, we are going to learn how to use the Milvus database and utilize it.
 
 ## Build up
 
