@@ -59,28 +59,29 @@ By running the cells in this notebook, you will:
 
    However, given that we need the database we choose to perform well at a large scale of data, `Milvus` is the better choice.
 
-   2. ***How to install `Milvous`?***
 
-      The installation of `Milvus` is done using Docker. 
-   In this project, we set up the database following the steps mentioned on the `Milvus` website. 
-   To set up the database, we need to follow the steps below:
-      1. **Download the Installation Script**
+2. ***How to install `Milvous`?***
+
+   The installation of `Milvus` is done using Docker. 
+In this project, we set up the database following the steps mentioned on the `Milvus` website. 
+To set up the database, we need to follow the steps below:
+   1. **Download the Installation Script**
       
-         `Milvus` provides an installation script to install it as a docker container.
-      You can download the installation script by following command:
-         ```bash
-          curl -sfL https://raw.githubusercontent.com/milvus-io/milvus/master/scripts/standalone_embed.sh -o standalone_embed.sh
-         ```
-         This file has been downloaded previously and you can view it at the address `applications/milvus_runner.sh` in the repo.
-      2. **Start, Stop and Delete the database**
-         You can run the database container with the following command:
-          ```bash
-          bash milvus_runner.sh start
-         ```
-         And you can stop and delete the container with the following commands:
-         ```bash
-          bash milvus_runner.sh stop
-          bash milvus_runner.sh delete
-         ```
+      `Milvus` provides an installation script to install it as a docker container.
+   You can download the installation script by following command:
+      ```bash
+       curl -sfL https://raw.githubusercontent.com/milvus-io/milvus/master/scripts/standalone_embed.sh -o standalone_embed.sh
+      ```
+      This file has been downloaded previously and you can view it at the address `applications/milvus_runner.sh` in the repo.
+   2. **Start, Stop and Delete the database**
+      You can run the database container with the following command:
+       ```bash
+       bash milvus_runner.sh start
+      ```
+      And you can stop and delete the container with the following commands:
+      ```bash
+       bash milvus_runner.sh stop
+       bash milvus_runner.sh delete
+      ```
          
-      To see how to activate and use this database, you can check the wrapper written in the file applications/milvues_data_base_provider.py.
+   To see how to activate and use this database, you can check the wrapper written in the file applications/milvues_data_base_provider.py.
