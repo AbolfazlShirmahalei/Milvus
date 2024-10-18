@@ -1,0 +1,14 @@
+[tool.poetry]
+package-mode = false
+name = "Milvus"
+version = "0.0.0"
+authors = [
+    "Abolfazl Shirmahalei <abolfazl.shirmahalei@gmail.com>"
+]
+
+[tool.poetry.dependencies]
+python = "3.9.13"
+
+[build-system]
+requires = ["poetry-core", "setuptools==70.0.0"]
+build-backend = "poetry.core.masonry.api"
