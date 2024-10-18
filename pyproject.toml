@@ -11,6 +11,7 @@ python = "3.9.13"
 pymilvus = "2.3.8"
 numpy = "2.0.2"
 jupyterlab = "4.2.5"
+docker = "7.1.0"
 
 [build-system]
 requires = ["poetry-core", "setuptools==70.0.0"]
