@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 run_node1() {
     cat << EOF > embedEtcd.yaml
 listen-client-urls: http://0.0.0.0:2379
@@ -163,3 +165,22 @@ delete() {
     sudo rm -rf $(pwd)/user.yaml
     echo "Delete successfully."
 }
+
+case $1 in
+    restart)
+        stop
+        start
+        ;;
+    start)
+        start
+        ;;
+    stop)
+        stop
+        ;;
+    delete)
+        delete
+        ;;
+    *)
+        echo "please use bash standalone_embed.sh restart|start|stop|upgrade|delete"
+        ;;
+esac
