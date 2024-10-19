@@ -74,7 +74,7 @@ wait_for_milvus_running() {
     do
         res1=`sudo docker ps|grep milvus-node2|grep healthy|wc -l`
         res2=`sudo docker ps|grep milvus-node2|grep healthy|wc -l`
-        if [ $res1 -eq 1 ] & [ $res2 -eq 1 ]
+        if [ $res1 -eq 1 ] && [ $res2 -eq 1 ]
         then
             echo "Start successfully."
             echo "To change the default Milvus configuration, add your settings to the user.yaml file and then restart the service."
@@ -87,11 +87,11 @@ wait_for_milvus_running() {
 start() {
     res1=`sudo docker ps|grep milvus-node1|grep healthy|wc -l`
     res2=`sudo docker ps|grep milvus-node2|grep healthy|wc -l`
-    if [ $res1 -eq 1 ] && [ $res2 -eq 1 ]
-    then
-        echo "Milvus Cluster is running."
-        exit 0
-    fi
+#    if [ $res1 -eq 1 ] && [ $res2 -eq 1 ]
+#    then
+#        echo "Milvus Cluster is running."
+#        exit 0
+#    fi
 
     res3=`sudo docker ps -a|grep milvus-node1|wc -l`
     res4=`sudo docker ps -a|grep milvus-node2|wc -l`
